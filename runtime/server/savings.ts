@@ -1,7 +1,7 @@
 // Tokens used and tokens saved, per change and in total. A change through the inspector sends one part's pieces in one
 // call, or none at all (typed text, a link, a slider); the same change asked of plain Claude Code, working through the
 // project on its own, is a whole agent run. What that run costs is our own estimate, from a backtest on our test sites
-// (backtest/run.mjs, results in backtest/, method in docs/methodology.md): never measured on the person's computer, nothing extra runs there.
+// (backtest/run.mjs and its results, on the repo's `benchmark` branch; method in docs/methodology.md): never measured on the person's computer, nothing extra runs there.
 // Each change counts the difference; Whole site runs are such a run, so they save nothing.
 //
 // The totals live in one file in the home folder, so they add up across every site and every chat on this computer:
@@ -23,7 +23,7 @@ export const WEIGHT = { input: 1, cacheWrite: 1.25, cacheRead: 0.1, output: 5 };
 export const weigh = (u: { input?: number; cacheWrite?: number; cacheRead?: number; output?: number }) =>
   Math.round((u.input ?? 0) * WEIGHT.input + (u.cacheWrite ?? 0) * WEIGHT.cacheWrite + (u.cacheRead ?? 0) * WEIGHT.cacheRead + (u.output ?? 0) * WEIGHT.output);
 
-// backtest/results-2026-11-18.json: 15 everyday changes on three of our sites drawn at random, both ways on the same
+// backtest/results-2026-11-18.json (on the `benchmark` branch): 15 everyday changes on three of our sites drawn at random, both ways on the same
 // day, Opus 5.5, weighed from the token breakdown the Claude CLI reports (plain Claude Code's checked against its
 // logs). Medians, weighted. Averages: 59,136 and 11,739. Raw (cache reads counted in full): 298,767 vs 8,474.
 // The method is in docs/methodology.md.

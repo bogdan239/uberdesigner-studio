@@ -25,7 +25,7 @@ The same request, made two ways, with the same model:
   ui-type-animator. All three are Vite + React projects. One very heavy site was left out of the draw.
 - **Five requests a site, fifteen in all, written before any result.** They are everyday design changes: a bigger
   button, a lighter headline, an outline, looser line spacing, rounder corners, smaller grey text, a slowly pulsing
-  dot. The full list is `backtest/cases-2026-11-18.json`.
+  dot. The full list is [`backtest/cases-2026-11-18.json`](https://github.com/bogdan239/uberdesigner-studio/blob/benchmark/backtest/cases-2026-11-18.json) on the `benchmark` branch.
 - **Each site was copied** and set up with that day's studio, so the real test sites were never touched.
 
 ## The two tests
@@ -148,7 +148,14 @@ made the change in a running conversation it overstates the saving, as the resul
 
 ## Run it yourself
 
-The scripts, the cases and the results are in `backtest/`. The sites' dev servers must be running with the studio
+The scripts, the cases and the results are in [`backtest/`](https://github.com/bogdan239/uberdesigner-studio/tree/benchmark/backtest) on the repo's `benchmark` branch, apart from the
+skill people install. Get a copy of that branch in a folder of its own:
+
+```bash
+git clone -b benchmark https://github.com/bogdan239/uberdesigner-studio studio-benchmark
+```
+
+Run the commands below from that folder. The sites' dev servers must be running with the studio
 installed, and the scripts need Google Chrome and the Claude CLI, signed in. They spend tokens on your own plan:
 this run used about 1.7 million weighted tokens.
 

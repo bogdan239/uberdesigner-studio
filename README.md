@@ -95,7 +95,7 @@ a change through the studio adds nothing to your conversation, because it is a s
 This is our own estimate from a small sample: 15 changes on three of our sites, drawn at random, on 18 November
 2026, with Opus 5.5. Tokens are weighted the way usage is priced. Setup is not counted: it costs tokens once per
 site. Results vary by project. The method, every number and the scripts are in
-[How we measure the savings](docs/methodology.md) and `backtest/`, so you can run it yourself.
+[How we measure the savings](docs/methodology.md) and on the repo's [`benchmark` branch](https://github.com/bogdan239/uberdesigner-studio/tree/benchmark/backtest), so you can run it yourself.
 
 ## How it works
 

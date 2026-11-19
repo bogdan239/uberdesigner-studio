@@ -87,7 +87,7 @@ each gets the plain description below (the app shows it on the step's row).
    > **Step 1 of 3: install Claude Code for your terminal.** It's separate from this app, and the studio works
    > through it. Press the ▶ button at the right of the command to start it:
    > ```bash
-   > curl -fsSL https://claude.ai/install.sh | bash
+   > <the command the check printed after PERSON RUNS>
    > ```
    > Anthropic's official installer, about a minute. I'll notice when it's done.
 
@@ -105,7 +105,7 @@ each gets the plain description below (the app shows it on the step's row).
    > ```
    > The official Node.js from nodejs.org. No password, about a minute.
 
-   The commands are the ones the check printed, not these. For `update-node` the bold line is "**update Node.js, a
+   The commands are the ones the check printed, word for word, not these (step 1's is left for the check to give). For `update-node` the bold line is "**update Node.js, a
    free program uberdesigner studio runs on.**" and "Yours is too old for it (version <the version>)." in place of the two
    sentences. If the Node.js command says it couldn't, the nodejs.org installer (nodejs.org/en/download, the LTS
    version) is the way instead. More than this (what Node.js is for, why the terminal copy is a different one) only when they ask.
